@@ -1,13 +1,15 @@
 #include <QTextStream>
 #include<QDebug>
 #include <QRegExp>
-
+#include<QStandardPaths>
 #include "filemanager.h"
 
 
 FileManager::FileManager(QObject *parent) : QObject(parent)
 {
-    file.setFileName("clipboard.txt");
+    QString addin_path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
+    qDebug()<<addin_path;
+    file.setFileName(addin_path+"clipboard.txt");
 
 }
 
