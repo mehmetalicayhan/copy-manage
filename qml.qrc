@@ -1,0 +1,22 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>ClipboardItem.qml</file>
+        <file>icons/clipboard1.png</file>
+        <file>icons/close.svg</file>
+        <file>icons/Icon.png</file>
+        <file>icons/settings.svg</file>
+        <file>icons/close-hover.svg</file>
+        <file>icons/settings-hover.svg</file>
+        <file>icons/copy.png</file>
+        <file>icons/copy.svg</file>
+        <file>icons/copySuccess.png</file>
+        <file>icons/copy-hover.svg</file>
+        <file>icons/detail-true.svg</file>
+        <file>icons/detail-true-hover.svg</file>
+        <file>icons/detail-false.svg</file>
+        <file>icons/detail-false-hover.svg</file>
+        <file>CustomPopup.qml</file>
+        <file>icons/trayIcon.svg</file>
+    </qresource>
+</RCC>
