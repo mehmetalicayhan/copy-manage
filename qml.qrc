@@ -18,5 +18,9 @@
         <file>icons/detail-false-hover.svg</file>
         <file>CustomPopup.qml</file>
         <file>icons/trayIcon.svg</file>
+        <file>icons/check.svg</file>
+        <file>icons/close-gray.svg</file>
+        <file>icons/checked.svg</file>
+        <file>icons/checked.jpg</file>
     </qresource>
 </RCC>

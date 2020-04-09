@@ -8,8 +8,7 @@
 FileManager::FileManager(QObject *parent) : QObject(parent)
 {
     QString addin_path = QStandardPaths::writableLocation(QStandardPaths::AppDataLocation);
-    qDebug()<<addin_path;
-    file.setFileName(addin_path+"clipboard.txt");
+    file.setFileName(addin_path+".txt");
 
 }
 

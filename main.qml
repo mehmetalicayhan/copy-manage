@@ -8,7 +8,7 @@ import org.mehmetali.filemanager 1.0
 ApplicationWindow {
     id:root
     visible: true
-    width: 300
+    width: 400
     height: Screen.height
     x:Screen.desktopAvailableWidth - width
     flags: Qt.FramelessWindowHint | Qt.Window
@@ -48,7 +48,7 @@ ApplicationWindow {
         id: parent
         width: root.width
         height: root.height
-        color: "#B3B6B0B0"
+        color:Qt.rgba(0,0,0,0.6)
 
         // Topbar
         Rectangle {
@@ -57,8 +57,7 @@ ApplicationWindow {
             height: 40
             x:0
             y:0
-            color: "#B6B0B0"
-            opacity: 1
+            color: Qt.rgba(255,255,255,0.7)
 
             NumberAnimation {
                 id:ana
@@ -156,9 +155,9 @@ ApplicationWindow {
             }
 
             anchors.topMargin: 20
-            anchors.leftMargin: 30
+            anchors.leftMargin: 15
             anchors.bottomMargin: 20
-            spacing: 40
+            spacing: 20
 
             focus: true
             height: parent.height
@@ -173,17 +172,11 @@ ApplicationWindow {
                 Drag.supportedActions: Qt.CopyAction | Qt.MoveAction
                 Drag.keys: ["text/plain"]
 
-
-//                Drag.onDragStarted : {
-//                    print("Start drag:")
-//                }
                 Drag.onDragFinished: {
 
                     Drag.drop();
                 }
-
-                color: clipboardList.currentIndex === index ? "#d0c4bc" : "white"
-
+                color: clipboardList.currentIndex === index ? Qt.rgba(40,40,40,0.8) : Qt.rgba(40,40,40,0.6)
                 MouseArea{
                     id:mouseArea
                     anchors.fill: parent
@@ -226,13 +219,10 @@ ApplicationWindow {
 
 
         // Clipboard
-
-
         Clipboard{
             function controlIsItemExist(lastElement) {
                 for(let i = 0 ;i<listModel.length;i++){
                     if(listModel[i]===lastElement){
-                        console.log("ok")
                         return false;
                     }
                 }

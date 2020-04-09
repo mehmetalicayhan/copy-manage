@@ -10,16 +10,18 @@ ApplicationWindow {
     height: 480
     flags: Qt.FramelessWindowHint | Qt.Window
     property string content: ""
-    x:Screen.desktopAvailableWidth - width -300
+    x:Screen.desktopAvailableWidth - width -400
     y:0
-    color: "#B6B0B0"
+    color: "black"
+    opacity: 0.9
     Button {
         z:100001
         id:detailCloseBtn
         width: 19
         height: 19
         background: Image{
-            source: detailCloseBtn.hovered ? "./icons/close-hover.svg" : "./icons/close.svg"
+            source: detailCloseBtn.hovered ? "./icons/close-hover.svg" : "./icons/close-gray.svg"
+            //source: detailCloseBtn.hovered ? "./icons/close.svg" : "./icons/close-hover.svg"
         }
         anchors{
             right: parent.right
@@ -47,7 +49,7 @@ ApplicationWindow {
         wrapMode: TextEdit.Wrap
         readOnly: true
         text: content
-        color: "black"
+        color: "white"
     }
 
 }
