@@ -19,8 +19,6 @@
 
 # Downloads and Installation
 
-- For now only compatabile with Debian based Linux distributions
-
 - Go to [release](https://github.com/mehmetalicayhan/copy-manage/releases/tag/1.0.0-b1) page and download .deb file
 
 - Open a terminal and enter following command
