@@ -8,6 +8,7 @@
 > <h2> You can see and manage your old copied datas
 
 - For now only support 'text' data
+- Qt 5.12 or higher
 
 ![](doc/wide.png)
 
